@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Library</h1>
+  </header>
+  <div class="main-content">
+    <div class="books-container">
+      <table id="books">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Author</th>
+            <th>Status</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Book1</td>
+            <td>John</td>
+            <td><button class="book-status read">Read</button></td>
+            <td><button id="delete-book">DELETE</button></b></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="sidebar">
+      <div class="add-book">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name">
+        </div>
+        <div>
+          <label for="author">Author</label>
+          <input type="text" id="author">
+        </div>
+        <div>
+          <label for="status">Status</label>
+          <select name="status" id="status">
+            <option value="read">READ</option>
+            <option value="not-read">NOT READ</option>
+          </select>
+        </div>
+        <div>
+          <input type="submit" id="submit" value="Submit">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html> 
