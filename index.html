@@ -40,26 +40,18 @@
       </table>
     </div>
     <div class="sidebar">
-      <div class="add-book">
-        <div>
-          <label for="name">Name</label>
-          <input type="text" id="name">
-        </div>
-        <div>
-          <label for="author">Author</label>
-          <input type="text" id="author">
-        </div>
-        <div>
-          <label for="status">Status</label>
-          <select name="status" id="status">
-            <option value="read">READ</option>
-            <option value="not-read">NOT READ</option>
-          </select>
-        </div>
-        <div>
-          <input type="submit" id="submit" value="Submit">
-        </div>
-      </div>
+      <form action="" class="add-book">
+        <label for="name">Name</label>
+        <input type="text" id="name" required>
+        <label for="author">Author</label>
+        <input type="text" id="author" required>
+        <label for="status">Status</label>
+        <select name="status" id="status" required>
+          <option value="read">READ</option>
+          <option value="not-read">NOT READ</option>
+        </select>
+        <input type="submit" id="submit" value="Submit">
+      </form>
     </div>
   </div>
   <script src="script.js"></script>
