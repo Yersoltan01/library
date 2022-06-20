@@ -23,33 +23,20 @@
             <th></th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td>Book1</td>
-            <td>John</td>
-            <td><button class="book-status read" id="book-number-1">Read</button></td>
-            <td><button id="delete-book">DELETE</button></b></td>
-          </tr>
-          <tr>
-            <td>Book1</td>
-            <td>John</td>
-            <td><button class="book-status read" id="book-number-2">Read</button></td>
-            <td><button id="delete-book">DELETE</button></b></td>
-          </tr>
+        <tbody id="table-body">
         </tbody>
       </table>
     </div>
     <div class="sidebar">
-      <form action="" class="add-book">
+      <form action="#" class="add-book">
         <label for="name">Name</label>
         <input type="text" id="name" required>
         <label for="author">Author</label>
         <input type="text" id="author" required>
-        <label for="status">Status</label>
-        <select name="status" id="status" required>
-          <option value="read">READ</option>
-          <option value="not-read">NOT READ</option>
-        </select>
+        <div>
+          <input type="checkbox" id="status">
+          <label for="status">I have read this book already</label>
+        </div>
         <input type="submit" id="submit" value="Submit">
       </form>
     </div>
