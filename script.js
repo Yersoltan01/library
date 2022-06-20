@@ -16,7 +16,6 @@ document.querySelector('#books').addEventListener('click', function(e) {
     }
   }
   if (e.target && e.target.matches('#delete-book')) {
-    // myBooks.splice(myBooks[e.target.id.slice(-1)], 1);
     myBooks.splice(e.target.parentNode.parentNode.childNodes[2].firstChild.id.slice(-1), 1);
     displayBooks();
   }
