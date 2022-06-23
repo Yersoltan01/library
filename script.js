@@ -21,10 +21,29 @@ document.querySelector('#books').addEventListener('click', function(e) {
   }
 });
 
-function Book(name, author, alreadyRead) {
-  this.name = name
-  this.author = author
-  this.alreadyRead = alreadyRead
+class Book {
+
+  name;
+  author;
+  alreadyRead;
+
+  constructor(name, author, alreadyRead) {
+    this.name = name;
+    this.author = author;
+    this.alreadyRead = alreadyRead;
+  }
+
+  get name() {
+    return this.name;
+  }
+
+  get author() {
+    return this.author;
+  }
+
+  get alreadyRead() {
+    return this.alreadyRead;
+  }
 }
 
 function displayBooks() {
@@ -69,6 +88,7 @@ submitBtn.addEventListener('click', function(e) {
   let author = document.querySelector('#author');
   let status = document.querySelector('#status')
   const book = new Book(name.value, author.value, status.checked);
+  console.log(book.name, book.author, book.alreadyRead);
   if(book.name != '' && book.author != '') {
     let exists = false;
     for (i = 0; i < myBooks.length; i++) {
